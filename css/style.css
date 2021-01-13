@@ -42,17 +42,22 @@ header nav .logo h1 span {
 }
 header nav ul {
   float: right;
-  width: 70%;
+  width: 50%;
   line-height: 2em;
 }
 header nav ul li {
   display: inline-block;
   width: 19%;
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.6em;
+  text-align: right;
+  font-weight: 500;
 }
 header nav ul li a {
   text-decoration: none;
+}
+header nav ul li a:hover {
+  color: black;
 }
 header .headline {
   padding-top: 20em;
@@ -68,6 +73,145 @@ header .headline h1 {
 header .headline h5 {
   font-weight: 45;
   color: white;
+}
+
+.catalog {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 100%;
+  margin: auto;
+  background-color: #f0f0f0;
+}
+.catalog h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.catalog .cars {
+  padding-top: 3em;
+  width: 80%;
+  margin: auto;
+}
+.catalog .cars:before, .catalog .cars:after {
+  content: "";
+  display: table;
+}
+.catalog .cars:after {
+  clear: both;
+}
+.catalog .cars .container {
+  text-align: center;
+  display: inline-block;
+  width: 24%;
+  margin: auto;
+}
+.catalog .cars .container img {
+  width: 100%;
+}
+.catalog .cars .container img:hover {
+  transform: scale(1.1);
+}
+.catalog .cars .container h4 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+.catalog .cars .container a {
+  margin-top: 1em;
+  padding: 0.5em;
+  background-color: #e42b15;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+.catalog .cars .container a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.main {
+  width: 100%;
+  margin-top: 2em;
+  margin: auto;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+}
+.main h4 {
+  padding: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main table {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 3em;
+  border-collapse: collapse;
+}
+.main table thead tr {
+  border-bottom: 1px solid gray;
+  background-color: #ff3720;
+}
+.main table thead tr th {
+  padding: 0.5em;
+  color: white;
+}
+.main table thead tr th:first-child {
+  background-color: #e42b15;
+  text-align: left;
+}
+.main table tbody tr {
+  border-bottom: 1px solid gray;
+}
+.main table tbody tr td {
+  padding: 0.5em;
+}
+.main table tbody tr td:first-child {
+  background-color: #f0f0f0;
+  text-align: left;
+  font-weight: bold;
+}
+.main table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.footer {
+  background-color: black;
+  height: 26em;
+  width: 100%;
+}
+.footer .box {
+  padding-top: 2em;
+  width: 80%;
+  margin: 0 auto;
+}
+.footer .box:before, .footer .box:after {
+  content: "";
+  display: table;
+}
+.footer .box:after {
+  clear: both;
+}
+.footer .box h4 {
+  color: #e42b15;
+  border-bottom: 1px solid #e42b15;
+}
+.footer .box h4 span {
+  color: grey;
+}
+.footer .box .left {
+  padding: 2em 1em;
+  float: left;
+  width: 40%;
+  font-style: italic;
+}
+.footer .box .left p {
+  color: white;
+}
+.footer .box .right {
+  padding: 2em;
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */

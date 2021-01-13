@@ -32,15 +32,20 @@ header {
         }
         ul{
             float:right;
-            width:70%;
+            width:50%;
             line-height: 2em;
             li{
                 display: inline-block;
                 width:19%;
                 text-transform:uppercase;
-                font-size:0.7em;
+                font-size:0.6em;
+                text-align:right;
+                font-weight: 500;
                 a {
                     text-decoration: none;
+                    &:hover {
+                        color:black;
+                    }
                 }
             }
         }
@@ -61,4 +66,135 @@ header {
         }
     }
 
+}
+.catalog {
+    padding-top:3em;
+    padding-bottom:3em;
+    width:100%;
+    margin:auto;
+    background-color: $grey_background;
+    h4{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .cars {
+        padding-top:3em;
+        width:80%;
+        margin:auto;
+        @include clearfix;
+        .container {
+            text-align:center;
+            display:inline-block;
+            width:24%;
+            margin:auto;
+            img {
+                width:100%;
+                &:hover{
+                    transform:scale(1.1);
+                }
+            }
+            h4{
+                text-align: center;
+                text-transform: capitalize;
+                margin-bottom:1em;
+                
+            }
+            a {
+                margin-top:1em;
+                padding:0.5em;
+                background-color: $red_dark;
+                text-decoration: none;
+                color:white;
+                border-radius:25px;
+                text-transform: uppercase;
+                font-size:0.8em;
+                &:hover {
+                    background-color: grey;
+                    color:black;
+                }
+            }
+        }
+    }
+}
+.main {
+    width:100%;
+    margin-top:2em;
+    margin:auto;
+    margin-bottom:3em;
+    padding-bottom:2em;
+    h4 {
+        padding:2em;
+        text-align:center;
+        text-transform: uppercase;
+    }
+    table {
+        margin:auto;
+        width:50%;
+        text-align:center;
+        padding:3em;
+        border-collapse:collapse;
+        thead {
+            tr {
+                border-bottom:1px solid gray;
+                background-color:$main_red;
+                th{
+                    padding:0.5em;
+                    color:white;
+                    &:first-child {
+                        background-color:$red_dark;
+                        text-align:left;
+                    }
+                }
+               
+            }
+        }
+        tbody{
+            tr{
+                border-bottom:1px solid gray;
+                td{
+                    padding:0.5em;
+                    &:first-child {
+                        background-color:$grey_background;
+                        text-align:left;
+                        font-weight:bold;
+                    }
+                }
+                &:hover {
+                    background-color:$grey_background;
+                }
+            }
+        }
+    }
+}
+.footer {
+    background-color:black;
+    height:26em;
+    width:100%;
+    .box {
+        padding-top:2em;
+        width:80%;
+        margin:0 auto;
+        @include clearfix;
+        h4 {
+            color:$red_dark;
+            border-bottom:1px solid $red_dark;
+            span{
+                color:grey;
+            }
+        }
+        .left {
+            padding:2em 1em;
+            float:left;
+            width:40%;
+            font-style:italic;
+            p{
+                color:white;
+            }
+        }
+        .right{
+            padding:2em;
+            float:right;
+        }
+    }
+    
 }
