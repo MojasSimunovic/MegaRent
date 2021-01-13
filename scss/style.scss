@@ -1,0 +1,64 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+header {
+    padding-top:1em;
+    width:100%;
+    background:url('../slike/background.jpg');
+    background-size:cover;
+    height:100vh;
+   
+    nav {
+        margin-top:1em;
+        width:80%;
+        margin:auto;
+        background-color:white;
+        height:2em;
+        @include clearfix;
+        .logo {
+            padding-left:1em;
+            line-height: 2em;
+            float:left;
+            width:20%;
+            font-family:$logo_font;
+            h1 {
+                color:red;
+                span {
+                    color:gray
+                }
+            }
+        }
+        ul{
+            float:right;
+            width:70%;
+            line-height: 2em;
+            li{
+                display: inline-block;
+                width:19%;
+                text-transform:uppercase;
+                font-size:0.7em;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .headline {
+        padding-top:20em;
+        width:40%;
+        margin:auto;
+        text-align:center;
+        h1 {
+            font-weight:50;
+            color: white;
+            border-bottom:1px solid red;
+        }
+        h5 {
+            font-weight:45;
+            color : white;
+        }
+    }
+
+}
